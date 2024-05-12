@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleWelcome.css">
     <title>Welcome</title>
 </head>
 <body>
-    
+    <div id="welcome">
+        <h1>Witamy w aplikacji ITYevhen</h1>
+        <div id="Onas">
+            <div id="Onas1" class="OnasSpan"><h3>About Us</h3><br>Welcome to ITYevhen, your go-to platform for connecting with like-minded individuals in the IT community. Whether you're a seasoned developer, a tech enthusiast, or someone simply curious about the world of technology, ITYevhen provides a space for you to share your experiences, insights, and questions.</div>
+            <div id="Onas2" class="OnasSpan">Explore the latest trends, share your own stories, and engage with others through posts, stories, and interactive discussions. At ITYevhen, we believe in fostering a vibrant and supportive community where knowledge is freely exchanged and connections are made.</div>
+        </div>
+        <button id="signInWelcome" onclick="WelcomeAnimSignIn()">Zaloguj się</button><button id="signUpWelcome" onclick="WelcomeAnimSignUp()">Zarejestruj się</button>
+    </div>
+    <form method="post" class="form" id="logIn">
+        <span onclick="wstecz()" class="wstecz">Wstecz</span>
+        <h2>Zaloguj się</h2><br><br>
+        <input class="input" type="text" placeholder="Twoje imię..."><br><br>
+        <input class="input" type="password" placeholder="Twoje hasło..."><br><br>
+        <input class="button" type="submit">
+    </form>
+
+    <form method="post" class="form" id="logUp">
+        <span onclick="wstecz()" class="wstecz">Wstecz</span>
+        <h2>Zarejestruj się</h2><br><br>
+        <input class="input" type="text" placeholder="Imię..."><br><br>
+        <input class="input" type="email" placeholder="Email..."><br><br>
+        <input class="input" type="password" placeholder="Hasło..."><br><br>
+        <input class="input" type="password" placeholder="Powtórz hasło..."><br><br>
+        <input class="button" type="submit">
+    </form>
+    <script src="script.js"></script>
 </body>
 </html>
